@@ -1,0 +1,16 @@
+graph G {
+	node [shape=record]
+	"Graph visualisation tools"
+	subgraph clusterA {
+		struct1 [label="graph-tools |{ 27.09.17 | no pip}"]
+		struct2 [label="python-igraph |{ 2014 | pip+}"]
+		struct3 [label="Node-Box |{ 08.01.18 | no pip}"]
+		struct4 [label="Gephi |{ 30.09.17 | command line only}"]
+	}
+	subgraph clusterB {
+		struct5 [label="networkx | {09.18 | pip+}"]
+		struct6 [label="GraphViz | {25.12.16 (Dec 2018) | pip+}"]
+	}
+	"Graph visualisation tools" -- clusterA
+	"Graph visualisation tools" -- clusterB
+}
